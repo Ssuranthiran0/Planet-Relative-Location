@@ -1,0 +1,41 @@
+Given a position on Earth, in latitude and longitude, and a time given in date and time, determine the relative position of the planets: Mercury, Venus, and Mars in the sky. 
+
+Important numbers:
+
+Eccentricity: Measure of circularity (lower is closer to circle, higher is more elliptical) e
+Semi-Major Axis: Longest Diameter of an ellipse. a
+Inclination: Tilt of elliptical orbit in relation to earth's
+
+Mercury:
+    Eccentricity: 0.206
+    Semi-Major Axis: 0.387 AU
+    Orbital Period: 88 days
+    Inclination: 7.005 degrees
+    Mean Anomaly: 174.796
+    Longitude of Perihelion: 77.457
+
+Venus:
+    Eccentricity: 0.007
+    Semi-Major Axis: 0.723 AU
+    Orbital Period: 224.701 days
+    Inclination: 3.394
+    Mean Anomaly: 50.115
+    Longitude of Perihelion: 131.570
+
+Earth:
+    Eccentricity: 0.017
+    Semi-Major Axis: 1 AU
+    Orbital Period: 365.256 days
+    Inclination: 0
+    Mean Anomaly: 357.529
+    Longitude of Perihelion: 102.937
+
+Mars:
+    Eccentricity: 0.093
+    Semi-Major Axis: 1.524 AU
+    Orbital Period:  686.98 days
+    Inclination: 1.85
+    Mean Anomaly: 19.373
+    Longitude of Perihelion: 336.04
+
+r(theta) = a(1-e^2)/(1+e*cos(theta))
