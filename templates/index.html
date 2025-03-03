@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planetary Calculations</title>
 </head>
+
 <body>
     <h1>Planetary Orbital Calculations</h1>
     <form method="POST">
         <label for="date">Enter Date (YYYY/MM/DD):</label>
         <input type="text" id="date" name="date" required><br><br>
+        <label for="text">Enter Mean Anomaly (DEG):</label>
+        <input type="text" id="mean" name="mean"><br><br>
 
         <label for="planet">Select Planet:</label>
         <select id="planet" name="planet" required>
@@ -21,12 +25,13 @@
 
         <button type="submit">Calculate</button>
     </form>
-
+    
     {% if result %}
-    <h2>Results:</h2>
-    <p>{{ result | safe }}</p>  <!-- Allow HTML formatting with 'safe' -->
+    <h2>Anomaly Results:</h2>
+    <p>{{ result | safe }}</p> <!-- Allow HTML formatting with 'safe' -->
     {% else %}
     <p>No result yet. Please enter the date and select a planet.</p>
     {% endif %}
 </body>
+
 </html>
